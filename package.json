@@ -1,0 +1,41 @@
+{
+  "name": "telegraph-wrapper",
+  "description": "Telegra.ph api wrapper with docs and files upload",
+  "repository": "https://github.com/TABmk/telegraph-wrapper.git",
+  "homepage": "https://github.com/TABmk/telegraph-wrapper.git",
+  "bugs": "https://github.com/TABmk/telegraph-wrapper/issues",
+  "version": "1.0.0",
+  "author": "TAB_mk <tabmk.contact@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "telegram",
+    "telegraph",
+    "telegra.ph"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.eslint.json",
+    "start": "yarn build && node ./index.js",
+    "dev": "nodemon",
+    "lint": "eslint",
+    "docs": "typedoc --tsconfig tsconfig.eslint.json && open file://$(pwd)/docs/index.html"
+  },
+  "main": "index.ts",
+  "types": "index.d.ts",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/node-fetch": "^2.6.2",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "nodemon": "^2.0.20",
+    "typedoc": "^0.23.23",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "form-data": "^4.0.0",
+    "node-fetch": "2"
+  }
+}

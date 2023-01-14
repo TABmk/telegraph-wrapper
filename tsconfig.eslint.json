@@ -1,0 +1,10 @@
+{
+  "include": [
+    "*/*.ts",
+    "*.ts",
+    ".eslintrc"
+  ],
+  "compilerOptions": {
+    "declaration": true,
+  }
+}
