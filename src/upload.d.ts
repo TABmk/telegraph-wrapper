@@ -10,7 +10,7 @@ export type TelegraphOK = Array<{
  */
 export type TelegraphError = {
     /** Error body */
-    eror: string;
+    error: string;
 };
 /**
  * Upload files to telegra.ph server
